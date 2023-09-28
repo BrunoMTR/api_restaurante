@@ -1,18 +1,21 @@
 package com.example.api_restaurante.otp;
 
 import com.example.api_restaurante.modelos.Role;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UsuarioDto implements Serializable {
-    private final String nome;
-    private final String sobrenome;
-    private final String email;
-    private final String passe;
-    private final Role role;
-    private final PerfilDto perfil;
-    private final RestauranteDto restaurante;
+    private  String nome;
+    private  String sobrenome;
+    private  String email;
+    private  String passe;
+    private  Role role;
+    private  RestauranteDto restaurante;
 }
