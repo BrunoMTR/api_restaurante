@@ -111,7 +111,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>restaurante</finalName>
+		<finalName>api_restaurante</finalName>
 	</build>
 
 </project>
