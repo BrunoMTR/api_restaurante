@@ -9,5 +9,5 @@ RUN mvn clean install
 FROM openjdk:17-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar ./api_restaurante.jar
-EXPOSE 8080
+EXPOSE 80
 CMD ["java", "-jar", "api_restaurante.jar"]
